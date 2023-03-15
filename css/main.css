@@ -89,3 +89,37 @@ ul.education a {
 ul.education span.institute {
     font-size: larger;
 }
+
+/* publication */
+ul.publication {
+    padding-left: 0;
+}
+
+ul.publication li {
+    margin: 16px 0 16px 2px;
+    list-style-type: none;
+    border-left: 4px darkcyan solid;
+    padding-left: 16px;
+    display: flex;
+    flex-direction: column;
+}
+
+ul.publication a {
+    text-decoration: none;
+}
+
+ul.publication span {
+    margin: 2px 0;
+}
+
+ul.publication span.info span {
+    margin-right: 16px;
+}
+
+ul.publication span.title {
+    font-size: large;
+}
+
+ul.publication span.journal {
+    font-style: italic;
+}
