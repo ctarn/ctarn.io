@@ -35,9 +35,6 @@ footer {
 
 /* software */
 ul.software {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
     padding-left: 0;
 }
 
@@ -69,4 +66,26 @@ ul.software span.name {
 
 ul.software span.more {
     font-weight: lighter;
+}
+
+/* education */
+ul.education {
+    padding-left: 0;
+}
+
+ul.education li {
+    margin: 16px 0 16px 2px;
+    list-style-type: none;
+    border-left: 4px darkcyan solid;
+    padding-left: 16px;
+    display: flex;
+    flex-direction: column;
+}
+
+ul.education a {
+    text-decoration: none;
+}
+
+ul.education span.institute {
+    font-size: larger;
 }
