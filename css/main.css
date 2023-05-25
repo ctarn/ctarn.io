@@ -7,30 +7,40 @@ h1, h2, h3, h4, h5, h6 {
     color: darkcyan;
 }
 
-div.wrapper {
-    width: 800px;
-    margin: 16px auto;
+body, header, main, footer {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+div.header, div.main, div.footer {
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 800px;
+    min-width: 400px;
+    margin: 0 auto;
+    padding: 4px;
+}
+
+div.header {
+    height: 60px;
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 
-header {
-    width: 100%;
-    margin: 16px auto;
+div.main {
+    min-height: 600px;
+    padding: 16px;
 }
 
-main {
-    width: 100%;
-    min-height: 520px;
-    margin: 16px auto;
-}
-
-footer {
-    width: 100%;
-    margin: 16px auto;
+div.footer {
+    height: 40px;
     display: flex;
+    flex-direction: row;
     justify-content: space-around;
+    align-items: center;
 }
 
 /* software */
