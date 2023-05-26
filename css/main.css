@@ -43,93 +43,66 @@ div.footer {
     align-items: center;
 }
 
-/* software */
-ul.software {
+div.header a, div.footer a {
+    text-decoration: none;
+}
+
+.author span.me {
+    text-decoration-line: underline;
+}
+
+span.journal {
+    font-style: italic;
+}
+
+ul.items {
     padding-left: 0;
 }
 
-ul.software li {
-    margin: 4px 0;
+ul.items > li {
     list-style-type: none;
+    margin: 16px 0 16px 2px;
+    border-left: 4px darkcyan solid;
+    padding-left: 16px;
+    display: flex;
+    flex-direction: column;
 }
 
-ul.software a {
+ul.items > li > .row, ul.items h3 {
+    margin: 4px 0;
+}
+
+ul.items > li > .row.meta {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+ul.items > li > .row.meta > * {
+    margin-left: 16px;
+}
+
+ul.items > li > .row.meta > :first-child {
+    margin-left: 0;
+}
+
+ul.items > li a {
     text-decoration: none;
+}
+
+ul.items.logo > li {
+    margin: 4px 0;
+    border: none;
+    padding-left: 0px;
     display: flex;
     flex-direction: row;
     align-items: center;
 }
 
-ul.software img {
+ul.items.logo > li > .logo {
     width: 80px;
 }
 
-ul.software div.desc {
-    display: flex;
-    flex-direction: column;
+ul.items.logo > li > .info {
     padding-left: 16px;
-}
-
-ul.software span.name {
-    font-size: x-large;
-}
-
-ul.software span.more {
-    font-weight: lighter;
-}
-
-/* education */
-ul.education {
-    padding-left: 0;
-}
-
-ul.education li {
-    margin: 16px 0 16px 2px;
-    list-style-type: none;
-    border-left: 4px darkcyan solid;
-    padding-left: 16px;
-    display: flex;
-    flex-direction: column;
-}
-
-ul.education a {
-    text-decoration: none;
-}
-
-ul.education span.institute {
-    font-size: larger;
-}
-
-/* publication */
-ul.publication {
-    padding-left: 0;
-}
-
-ul.publication li {
-    margin: 16px 0 16px 2px;
-    list-style-type: none;
-    border-left: 4px darkcyan solid;
-    padding-left: 16px;
-    display: flex;
-    flex-direction: column;
-}
-
-ul.publication a {
-    text-decoration: none;
-}
-
-ul.publication span {
-    margin: 2px 0;
-}
-
-ul.publication span.info span {
-    margin-right: 16px;
-}
-
-ul.publication span.title {
-    font-size: large;
-}
-
-ul.publication span.journal {
-    font-style: italic;
 }
