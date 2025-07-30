@@ -69,6 +69,7 @@ ul.items > li {
 }
 
 ul.items > li > .row, ul.items h3 {
+    color: dimgrey;
     margin: 4px 0;
 }
 
